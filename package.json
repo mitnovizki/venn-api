@@ -1,0 +1,29 @@
+{
+  "name": "node-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./solution",
+    "startServer": "node server/index.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "mitnovizki",
+  "license": "ISC",
+  "devDependencies": {
+    "apollo-server-testing": "^2.3.1",
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "apollo-server": "^2.3.1",
+    "apollo-server-express": "^2.3.1",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "graphql-request": "^1.8.2",
+    "moment": "^2.24.0"
+  }
+}

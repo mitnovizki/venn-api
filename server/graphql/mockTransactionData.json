@@ -1,0 +1,1026 @@
+{
+  "moshe": [
+    {
+      "amount": 275,
+      "description": "Something we don't recognize",
+      "date": "08/07/2017"
+    },
+    {
+      "amount": 166,
+      "description": "Star taxis",
+      "date": "01/04/2017"
+    },
+    {
+      "amount": 122,
+      "description": "Flight to Amsterdam",
+      "date": "30/10/2017"
+    },
+    {
+      "amount": 331,
+      "description": "Electric bill",
+      "date": "07/03/2018"
+    },
+    {
+      "amount": 84,
+      "description": "Beach hotel",
+      "date": "03/07/2018"
+    },
+    {
+      "amount": 278,
+      "description": "Flight to Amsterdam",
+      "date": "15/09/2018"
+    },
+    {
+      "amount": 90,
+      "description": "Electric bill",
+      "date": "27/09/2018"
+    },
+    {
+      "amount": 159,
+      "description": "Pizza moshe",
+      "date": "08/11/2017"
+    },
+    {
+      "amount": 73,
+      "description": "Best garage in town",
+      "date": "21/11/2017"
+    },
+    {
+      "amount": 301,
+      "description": "Egged buses",
+      "date": "25/06/2017"
+    },
+    {
+      "amount": 69,
+      "description": "Best garage in town",
+      "date": "01/02/2017"
+    },
+    {
+      "amount": 201,
+      "description": "Pizza moshe",
+      "date": "04/11/2018"
+    },
+    {
+      "amount": 327,
+      "description": "Star taxis",
+      "date": "24/04/2017"
+    },
+    {
+      "amount": 299,
+      "description": "Beach hotel",
+      "date": "14/09/2018"
+    },
+    {
+      "amount": 84,
+      "description": "Flight to Amsterdam",
+      "date": "06/04/2017"
+    },
+    {
+      "amount": 83,
+      "description": "Flight to Amsterdam",
+      "date": "24/12/2017"
+    },
+    {
+      "amount": 335,
+      "description": "Flight to Amsterdam",
+      "date": "05/07/2017"
+    },
+    {
+      "amount": 97,
+      "description": "Flight to Amsterdam",
+      "date": "05/05/2017"
+    },
+    {
+      "amount": 286,
+      "description": "Egged buses",
+      "date": "19/09/2017"
+    },
+    {
+      "amount": 101,
+      "description": "Doctor spock",
+      "date": "20/03/2018"
+    },
+    {
+      "amount": 164,
+      "description": "Electric bill",
+      "date": "15/06/2017"
+    },
+    {
+      "amount": 337,
+      "description": "Star taxis",
+      "date": "17/01/2017"
+    },
+    {
+      "amount": 41,
+      "description": "Egged buses",
+      "date": "18/07/2018"
+    },
+    {
+      "amount": 107,
+      "description": "Beach hotel",
+      "date": "02/03/2018"
+    },
+    {
+      "amount": 217,
+      "description": "Pizza moshe",
+      "date": "08/06/2017"
+    },
+    {
+      "amount": 44,
+      "description": "Pizza people",
+      "date": "03/03/2017"
+    },
+    {
+      "amount": 76,
+      "description": "Pizza moshe",
+      "date": "11/07/2018"
+    },
+    {
+      "amount": 290,
+      "description": "Pizza moshe",
+      "date": "30/03/2017"
+    },
+    {
+      "amount": 178,
+      "description": "Pizza moshe",
+      "date": "27/06/2018"
+    },
+    {
+      "amount": 328,
+      "description": "Pizza moshe",
+      "date": "06/09/2018"
+    },
+    {
+      "amount": 287,
+      "description": "Pizza moshe",
+      "date": "04/04/2018"
+    },
+    {
+      "amount": 143,
+      "description": "Pizza moshe",
+      "date": "24/02/2018"
+    },
+    {
+      "amount": 94,
+      "description": "Doctor spock",
+      "date": "02/03/2018"
+    },
+    {
+      "amount": 190,
+      "description": "Electric bill",
+      "date": "03/02/2017"
+    },
+    {
+      "amount": 235,
+      "description": "Star taxis",
+      "date": "26/03/2017"
+    },
+    {
+      "amount": 61,
+      "description": "Beach hotel",
+      "date": "07/09/2018"
+    },
+    {
+      "amount": 22,
+      "description": "Pizza people",
+      "date": "24/04/2018"
+    },
+    {
+      "amount": 109,
+      "description": "Best garage in town",
+      "date": "14/02/2018"
+    },
+    {
+      "amount": 118,
+      "description": "Flight to Amsterdam",
+      "date": "08/08/2018"
+    },
+    {
+      "amount": 97,
+      "description": "Electric bill",
+      "date": "02/01/2018"
+    },
+    {
+      "amount": 222,
+      "description": "Electric bill",
+      "date": "18/07/2018"
+    },
+    {
+      "amount": 123,
+      "description": "Best garage in town",
+      "date": "16/04/2017"
+    },
+    {
+      "amount": 295,
+      "description": "Pizza moshe",
+      "date": "03/11/2018"
+    },
+    {
+      "amount": 97,
+      "description": "Electric bill",
+      "date": "19/06/2017"
+    },
+    {
+      "amount": 275,
+      "description": "Egged buses",
+      "date": "14/04/2017"
+    },
+    {
+      "amount": 268,
+      "description": "Egged buses",
+      "date": "23/02/2017"
+    },
+    {
+      "amount": 27,
+      "description": "Pizza moshe",
+      "date": "23/05/2018"
+    },
+    {
+      "amount": 182,
+      "description": "Pizza moshe",
+      "date": "19/07/2018"
+    },
+    {
+      "amount": 265,
+      "description": "Electric bill",
+      "date": "26/02/2017"
+    },
+    {
+      "amount": 322,
+      "description": "Pizza moshe",
+      "date": "19/08/2018"
+    },
+    {
+      "amount": 334,
+      "description": "Best garage in town",
+      "date": "05/10/2018"
+    },
+    {
+      "amount": 221,
+      "description": "Pizza people",
+      "date": "21/10/2017"
+    },
+    {
+      "amount": 155,
+      "description": "Best garage in town",
+      "date": "22/07/2018"
+    },
+    {
+      "amount": 262,
+      "description": "Best garage in town",
+      "date": "22/10/2017"
+    },
+    {
+      "amount": 221,
+      "description": "Electric bill",
+      "date": "01/01/2018"
+    },
+    {
+      "amount": 150,
+      "description": "Flight to Amsterdam",
+      "date": "13/05/2018"
+    },
+    {
+      "amount": 212,
+      "description": "Doctor spock",
+      "date": "30/03/2017"
+    },
+    {
+      "amount": 72,
+      "description": "Star taxis",
+      "date": "04/01/2017"
+    },
+    {
+      "amount": 198,
+      "description": "Pizza moshe",
+      "date": "05/10/2017"
+    },
+    {
+      "amount": 304,
+      "description": "Best garage in town",
+      "date": "06/03/2017"
+    },
+    {
+      "amount": 30,
+      "description": "Flight to Amsterdam",
+      "date": "10/06/2017"
+    },
+    {
+      "amount": 177,
+      "description": "Beach hotel",
+      "date": "20/07/2018"
+    },
+    {
+      "amount": 249,
+      "description": "Beach hotel",
+      "date": "21/02/2017"
+    },
+    {
+      "amount": 118,
+      "description": "Egged buses",
+      "date": "19/01/2018"
+    },
+    {
+      "amount": 71,
+      "description": "Best garage in town",
+      "date": "20/05/2017"
+    },
+    {
+      "amount": 259,
+      "description": "Beach hotel",
+      "date": "03/11/2017"
+    },
+    {
+      "amount": 95,
+      "description": "Best garage in town",
+      "date": "03/02/2017"
+    },
+    {
+      "amount": 89,
+      "description": "Flight to Amsterdam",
+      "date": "23/01/2018"
+    },
+    {
+      "amount": 175,
+      "description": "Pizza people",
+      "date": "24/12/2018"
+    },
+    {
+      "amount": 53,
+      "description": "Flight to Amsterdam",
+      "date": "25/06/2018"
+    },
+    {
+      "amount": 342,
+      "description": "Egged buses",
+      "date": "08/01/2017"
+    },
+    {
+      "amount": 233,
+      "description": "Flight to Amsterdam",
+      "date": "13/12/2018"
+    },
+    {
+      "amount": 229,
+      "description": "Pizza moshe",
+      "date": "14/02/2017"
+    },
+    {
+      "amount": 250,
+      "description": "Beach hotel",
+      "date": "29/07/2018"
+    },
+    {
+      "amount": 122,
+      "description": "Egged buses",
+      "date": "17/08/2017"
+    },
+    {
+      "amount": 261,
+      "description": "Egged buses",
+      "date": "02/11/2017"
+    },
+    {
+      "amount": 334,
+      "description": "Flight to Amsterdam",
+      "date": "02/04/2018"
+    },
+    {
+      "amount": 300,
+      "description": "Pizza people",
+      "date": "15/05/2018"
+    },
+    {
+      "amount": 76,
+      "description": "Flight to Amsterdam",
+      "date": "25/04/2017"
+    },
+    {
+      "amount": 134,
+      "description": "Flight to Amsterdam",
+      "date": "06/02/2018"
+    },
+    {
+      "amount": 313,
+      "description": "Beach hotel",
+      "date": "19/05/2017"
+    },
+    {
+      "amount": 130,
+      "description": "Doctor spock",
+      "date": "05/11/2018"
+    },
+    {
+      "amount": 119,
+      "description": "Best garage in town",
+      "date": "20/05/2018"
+    },
+    {
+      "amount": 235,
+      "description": "Egged buses",
+      "date": "26/09/2018"
+    },
+    {
+      "amount": 205,
+      "description": "Egged buses",
+      "date": "11/04/2017"
+    },
+    {
+      "amount": 277,
+      "description": "Pizza people",
+      "date": "17/12/2018"
+    },
+    {
+      "amount": 327,
+      "description": "Pizza moshe",
+      "date": "14/03/2017"
+    },
+    {
+      "amount": 183,
+      "description": "Star taxis",
+      "date": "10/08/2018"
+    },
+    {
+      "amount": 298,
+      "description": "Pizza people",
+      "date": "29/06/2018"
+    },
+    {
+      "amount": 295,
+      "description": "Pizza people",
+      "date": "16/12/2017"
+    },
+    {
+      "amount": 299,
+      "description": "Star taxis",
+      "date": "23/07/2018"
+    },
+    {
+      "amount": 105,
+      "description": "Star taxis",
+      "date": "01/08/2017"
+    },
+    {
+      "amount": 111,
+      "description": "Doctor spock",
+      "date": "13/10/2018"
+    },
+    {
+      "amount": 313,
+      "description": "Egged buses",
+      "date": "30/04/2017"
+    },
+    {
+      "amount": 339,
+      "description": "Flight to Amsterdam",
+      "date": "10/05/2017"
+    },
+    {
+      "amount": 270,
+      "description": "Electric bill",
+      "date": "13/01/2018"
+    },
+    {
+      "amount": 141,
+      "description": "Pizza people",
+      "date": "24/01/2017"
+    },
+    {
+      "amount": 80,
+      "description": "Flight to Amsterdam",
+      "date": "21/03/2018"
+    },
+    {
+      "amount": 223,
+      "description": "Pizza people",
+      "date": "18/11/2018"
+    },
+    {
+      "amount": 220,
+      "description": "Pizza people",
+      "date": "10/06/2017"
+    },
+    {
+      "amount": 346,
+      "description": "Electric bill",
+      "date": "05/07/2018"
+    }
+  ],
+  "david": [
+    {
+      "amount": 110,
+      "description": "Pizza moshe",
+      "date": "18/04/2017"
+    },
+    {
+      "amount": 274,
+      "description": "Flight to Amsterdam",
+      "date": "13/04/2017"
+    },
+    {
+      "amount": 302,
+      "description": "Star taxis",
+      "date": "10/10/2017"
+    },
+    {
+      "amount": 333,
+      "description": "Electric bill",
+      "date": "05/04/2018"
+    },
+    {
+      "amount": 196,
+      "description": "Flight to Amsterdam",
+      "date": "25/06/2018"
+    },
+    {
+      "amount": 286,
+      "description": "Flight to Amsterdam",
+      "date": "04/04/2018"
+    },
+    {
+      "amount": 244,
+      "description": "Beach hotel",
+      "date": "17/06/2018"
+    },
+    {
+      "amount": 171,
+      "description": "Electric bill",
+      "date": "11/08/2017"
+    },
+    {
+      "amount": 189,
+      "description": "Egged buses",
+      "date": "02/06/2017"
+    },
+    {
+      "amount": 342,
+      "description": "Egged buses",
+      "date": "16/02/2017"
+    },
+    {
+      "amount": 342,
+      "description": "Star taxis",
+      "date": "23/02/2017"
+    },
+    {
+      "amount": 237,
+      "description": "Pizza moshe",
+      "date": "07/05/2018"
+    },
+    {
+      "amount": 23,
+      "description": "Flight to Amsterdam",
+      "date": "30/11/2018"
+    },
+    {
+      "amount": 64,
+      "description": "Flight to Amsterdam",
+      "date": "21/09/2017"
+    },
+    {
+      "amount": 272,
+      "description": "Star taxis",
+      "date": "19/01/2017"
+    },
+    {
+      "amount": 111,
+      "description": "Electric bill",
+      "date": "09/05/2018"
+    },
+    {
+      "amount": 323,
+      "description": "Flight to Amsterdam",
+      "date": "16/12/2017"
+    },
+    {
+      "amount": 331,
+      "description": "Pizza moshe",
+      "date": "31/10/2017"
+    },
+    {
+      "amount": 67,
+      "description": "Electric bill",
+      "date": "15/02/2018"
+    },
+    {
+      "amount": 55,
+      "description": "Best garage in town",
+      "date": "20/11/2017"
+    },
+    {
+      "amount": 218,
+      "description": "Best garage in town",
+      "date": "30/12/2018"
+    },
+    {
+      "amount": 158,
+      "description": "Flight to Amsterdam",
+      "date": "28/03/2017"
+    },
+    {
+      "amount": 128,
+      "description": "Star taxis",
+      "date": "17/07/2017"
+    },
+    {
+      "amount": 43,
+      "description": "Electric bill",
+      "date": "05/03/2018"
+    },
+    {
+      "amount": 295,
+      "description": "Doctor spock",
+      "date": "06/08/2018"
+    },
+    {
+      "amount": 91,
+      "description": "Pizza moshe",
+      "date": "30/05/2018"
+    },
+    {
+      "amount": 186,
+      "description": "Electric bill",
+      "date": "03/03/2018"
+    },
+    {
+      "amount": 213,
+      "description": "Doctor spock",
+      "date": "12/04/2018"
+    },
+    {
+      "amount": 148,
+      "description": "Beach hotel",
+      "date": "16/06/2017"
+    },
+    {
+      "amount": 261,
+      "description": "Best garage in town",
+      "date": "03/01/2018"
+    },
+    {
+      "amount": 249,
+      "description": "Flight to Amsterdam",
+      "date": "28/06/2018"
+    },
+    {
+      "amount": 231,
+      "description": "Star taxis",
+      "date": "11/01/2018"
+    },
+    {
+      "amount": 321,
+      "description": "Electric bill",
+      "date": "07/10/2017"
+    },
+    {
+      "amount": 235,
+      "description": "Flight to Amsterdam",
+      "date": "17/03/2018"
+    },
+    {
+      "amount": 122,
+      "description": "Pizza people",
+      "date": "01/02/2017"
+    },
+    {
+      "amount": 202,
+      "description": "Flight to Amsterdam",
+      "date": "22/03/2018"
+    },
+    {
+      "amount": 209,
+      "description": "Pizza moshe",
+      "date": "03/06/2018"
+    },
+    {
+      "amount": 202,
+      "description": "Pizza people",
+      "date": "20/09/2017"
+    },
+    {
+      "amount": 176,
+      "description": "Pizza moshe",
+      "date": "04/06/2018"
+    },
+    {
+      "amount": 187,
+      "description": "Electric bill",
+      "date": "06/09/2018"
+    },
+    {
+      "amount": 313,
+      "description": "Egged buses",
+      "date": "16/06/2017"
+    },
+    {
+      "amount": 255,
+      "description": "Beach hotel",
+      "date": "01/05/2017"
+    },
+    {
+      "amount": 274,
+      "description": "Star taxis",
+      "date": "08/04/2017"
+    },
+    {
+      "amount": 222,
+      "description": "Pizza moshe",
+      "date": "03/08/2017"
+    },
+    {
+      "amount": 21,
+      "description": "Electric bill",
+      "date": "18/04/2017"
+    },
+    {
+      "amount": 347,
+      "description": "Best garage in town",
+      "date": "24/08/2017"
+    },
+    {
+      "amount": 60,
+      "description": "Egged buses",
+      "date": "31/07/2018"
+    },
+    {
+      "amount": 230,
+      "description": "Flight to Amsterdam",
+      "date": "20/11/2018"
+    },
+    {
+      "amount": 248,
+      "description": "Best garage in town",
+      "date": "16/01/2018"
+    },
+    {
+      "amount": 134,
+      "description": "Egged buses",
+      "date": "07/01/2018"
+    },
+    {
+      "amount": 184,
+      "description": "Star taxis",
+      "date": "07/03/2018"
+    },
+    {
+      "amount": 246,
+      "description": "Pizza moshe",
+      "date": "26/04/2018"
+    },
+    {
+      "amount": 194,
+      "description": "Beach hotel",
+      "date": "08/02/2018"
+    },
+    {
+      "amount": 48,
+      "description": "Beach hotel",
+      "date": "17/05/2017"
+    },
+    {
+      "amount": 291,
+      "description": "Best garage in town",
+      "date": "19/05/2018"
+    },
+    {
+      "amount": 347,
+      "description": "Flight to Amsterdam",
+      "date": "26/11/2017"
+    },
+    {
+      "amount": 249,
+      "description": "Egged buses",
+      "date": "17/09/2017"
+    },
+    {
+      "amount": 334,
+      "description": "Pizza moshe",
+      "date": "07/06/2018"
+    },
+    {
+      "amount": 93,
+      "description": "Flight to Amsterdam",
+      "date": "05/07/2018"
+    },
+    {
+      "amount": 170,
+      "description": "Egged buses",
+      "date": "09/04/2017"
+    },
+    {
+      "amount": 181,
+      "description": "Star taxis",
+      "date": "09/06/2018"
+    },
+    {
+      "amount": 241,
+      "description": "Star taxis",
+      "date": "24/07/2017"
+    },
+    {
+      "amount": 108,
+      "description": "Doctor spock",
+      "date": "03/02/2017"
+    },
+    {
+      "amount": 93,
+      "description": "Pizza moshe",
+      "date": "02/04/2018"
+    },
+    {
+      "amount": 166,
+      "description": "Pizza moshe",
+      "date": "05/12/2017"
+    },
+    {
+      "amount": 103,
+      "description": "Electric bill",
+      "date": "21/11/2018"
+    },
+    {
+      "amount": 312,
+      "description": "Star taxis",
+      "date": "31/10/2017"
+    },
+    {
+      "amount": 166,
+      "description": "Pizza people",
+      "date": "13/05/2017"
+    },
+    {
+      "amount": 214,
+      "description": "Pizza people",
+      "date": "15/01/2017"
+    },
+    {
+      "amount": 311,
+      "description": "Star taxis",
+      "date": "14/10/2017"
+    },
+    {
+      "amount": 292,
+      "description": "Doctor spock",
+      "date": "03/10/2017"
+    },
+    {
+      "amount": 125,
+      "description": "Pizza moshe",
+      "date": "11/01/2017"
+    },
+    {
+      "amount": 262,
+      "description": "Doctor spock",
+      "date": "12/04/2017"
+    },
+    {
+      "amount": 29,
+      "description": "Pizza moshe",
+      "date": "15/09/2018"
+    },
+    {
+      "amount": 343,
+      "description": "Doctor spock",
+      "date": "01/09/2017"
+    },
+    {
+      "amount": 311,
+      "description": "Egged buses",
+      "date": "25/11/2017"
+    },
+    {
+      "amount": 77,
+      "description": "Electric bill",
+      "date": "12/10/2018"
+    },
+    {
+      "amount": 130,
+      "description": "Egged buses",
+      "date": "30/06/2018"
+    },
+    {
+      "amount": 57,
+      "description": "Beach hotel",
+      "date": "20/03/2018"
+    },
+    {
+      "amount": 216,
+      "description": "Best garage in town",
+      "date": "08/01/2018"
+    },
+    {
+      "amount": 163,
+      "description": "Flight to Amsterdam",
+      "date": "04/09/2017"
+    },
+    {
+      "amount": 337,
+      "description": "Best garage in town",
+      "date": "11/11/2018"
+    },
+    {
+      "amount": 34,
+      "description": "Electric bill",
+      "date": "11/10/2018"
+    },
+    {
+      "amount": 64,
+      "description": "Doctor spock",
+      "date": "01/07/2018"
+    },
+    {
+      "amount": 319,
+      "description": "Flight to Amsterdam",
+      "date": "04/08/2018"
+    },
+    {
+      "amount": 243,
+      "description": "Pizza people",
+      "date": "10/07/2017"
+    },
+    {
+      "amount": 82,
+      "description": "Pizza moshe",
+      "date": "22/08/2018"
+    },
+    {
+      "amount": 272,
+      "description": "Pizza moshe",
+      "date": "08/12/2017"
+    },
+    {
+      "amount": 160,
+      "description": "Star taxis",
+      "date": "14/02/2017"
+    },
+    {
+      "amount": 295,
+      "description": "Pizza moshe",
+      "date": "10/10/2018"
+    },
+    {
+      "amount": 330,
+      "description": "Doctor spock",
+      "date": "03/02/2017"
+    },
+    {
+      "amount": 300,
+      "description": "Best garage in town",
+      "date": "05/03/2018"
+    },
+    {
+      "amount": 63,
+      "description": "Pizza moshe",
+      "date": "31/08/2017"
+    },
+    {
+      "amount": 107,
+      "description": "Egged buses",
+      "date": "21/05/2018"
+    },
+    {
+      "amount": 265,
+      "description": "Egged buses",
+      "date": "09/05/2018"
+    },
+    {
+      "amount": 87,
+      "description": "Doctor spock",
+      "date": "08/02/2017"
+    },
+    {
+      "amount": 99,
+      "description": "Something else we don't recognize",
+      "date": "08/07/2017"
+    },
+    {
+      "amount": 339,
+      "description": "Pizza moshe",
+      "date": "23/01/2017"
+    },
+    {
+      "amount": 264,
+      "description": "Egged buses",
+      "date": "17/03/2018"
+    },
+    {
+      "amount": 155,
+      "description": "Electric bill",
+      "date": "11/07/2017"
+    },
+    {
+      "amount": 382,
+      "description": "What the hell is this expense?",
+      "date": "08/07/2017"
+    },
+    {
+      "amount": 485,
+      "description": "strange...",
+      "date": "08/07/2017"
+    },
+    {
+      "amount": 307,
+      "description": "Egged buses",
+      "date": "29/09/2017"
+    }
+  ]
+}
