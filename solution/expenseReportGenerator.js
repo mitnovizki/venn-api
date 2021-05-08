@@ -52,6 +52,10 @@ async function generateReport(username, startDate, endDate) {
 async function getCategories(transactions) {
   let promises = []
   let total = []
+  let promisesQueue = []
+  let result
+
+
 
   transactions.forEach(record => {
     promises.push(new Promise((resolve, rej) => {
@@ -64,7 +68,25 @@ async function getCategories(transactions) {
       )
     }))
   });
-  return Promise.all(promises).then(() => { return groupBy(total, 'desc') })
+
+  let i, j, chunk = 10;
+  for (i = 0, j = promises.length; i < j; i += chunk) {
+    promisesQueue.push(promises.slice(i, i + chunk));
+  }
+
+
+  promisesQueue.forEach(promiseSlice => {
+    setTimeout(async () => {
+      await Promise.all(promiseSlice).then(console.log(total));
+    }, 1000);
+  })
+
+  console.log('22222')
+  result = await groupBy(total, 'desc')
+  console.log(result)
+  return result
+
+  // return Promise.all(promises).then(() => { return groupBy(total, 'desc') })
 }
 
 async function classifyTransactionAxios(description) {
@@ -73,6 +95,8 @@ async function classifyTransactionAxios(description) {
 }
 
 const groupBy = async (input, key) => {
+
+  console.log(input)
   return input.reduce((total, currentAmount) => {
 
     let category = currentAmount[key];
@@ -80,7 +104,9 @@ const groupBy = async (input, key) => {
       total[category] = 0;
     }
     total[category] += currentAmount.amount;
+    console.log(total)
     return total;
+
   }, {});
 };
 

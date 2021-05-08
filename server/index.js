@@ -7,6 +7,8 @@ const resolvers = require("./graphql/resolvers");
 const { classifyTransaction } = require("./transactionClassifier");
 const { generateReport } = require("../solution/expenseReportGenerator");
 
+const rateLimit = require("express-rate-limit")
+
 
 const server = new ApolloServer({
   typeDefs,
@@ -22,8 +24,16 @@ const app = express();
 server.applyMiddleware({ app });
 app.use(bodyParser.json());
 
-app.post("/transaction/classification", async function (req, res) {
+// //mw
+// const limiter = rateLimit({
+//   max: 10,
+//   windowMs: 10000 * 60 * 60,
+//   message: "please try again later"
+// })
 
+
+
+app.post("/transaction/classification", async function (req, res) {
   if (!req.body || !req.body.transactionDescription) {
     res.status(400);
     res.send({
