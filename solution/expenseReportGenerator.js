@@ -5,6 +5,7 @@ const { GraphQLClient } = require('graphql-request');
 const { GRAPHQL_ENDPOINT, CATEGORIES_ENDPOINT, SERVER_BASE_URL, TRANSACTION_CATEGORIES, USERNAMES } = require('../consts');
 const { classifyTransaction } = require('../server/transactionClassifier');
 const client = new GraphQLClient(GRAPHQL_ENDPOINT);
+const cache = []
 
 
 /**
@@ -56,33 +57,64 @@ async function getCategories(transactions) {
   let total = []
   let promisesQueue = []
   let result
+  let limit = 0
 
   try {
-    transactions.forEach(record => {
-      promises.push(new Promise((resolve, rej) => {
-        resolve(classifyTransactionAxios(record.description)
-          .then(desc => {
-            total.push({ 'desc': desc || 'NO_CATEGORY', 'amount': record.amount });
-          })
-        )
-      }))
-    });
+    // transactions.forEach(async record => {
+    for (let i = 0; i < transactions.length; i++) {
 
-    let i, j, chunk = 10;
-    for (i = 0, j = promises.length; i < j; i += chunk) {
-      promisesQueue.push(promises.slice(i, i + chunk));
+      let record = transactions[i]
+
+
+      if (cache[record.description]) {
+        total.push({ 'desc': cache[record.description] || 'NO_CATEGORY', 'amount': record.amount });
+      }
+      else {
+        limit++
+        promises.push(new Promise((resolve, rej) => {
+          resolve(classifyTransactionAxios(record.description)
+            .then(classification => {
+              total.push({ 'desc': classification || 'NO_CATEGORY', 'amount': record.amount });
+              let description = record.description
+              if (!cache[description]) {
+                cache[description] = classification
+              }
+            })
+          )
+        }))
+      }
+
+      if (limit == 10) {
+        limit = 0
+        await Promise.all(promises)
+        promises = []
+      }
     }
 
-    for (let i = 0; i < promisesQueue.length; i++) {
-      await Promise.all(promisesQueue[i])
+    if (limit < 10) {
+      await Promise.all(promises)
     }
+
+    // let i, j, chunk = 10;
+    // for (i = 0, j = promises.length; i < j; i += chunk) {
+    //   promisesQueue.push(promises.slice(i, i + chunk));
+    // }
+
+    // for (let i = 0; i < promisesQueue.length; i++) {
+    //   console.log(cache)
+    //   await Promise.all(promisesQueue[i])
+    // }
+
     result = await groupBy(total, 'desc')
+
     return result
-  } catch (error) {
+  }
+
+  catch (error) {
     throw new Error(error)
   }
-  // return Promise.all(promises).then(() => { return groupBy(total, 'desc') })
 }
+// return Promise.all(promises).then(() => { return groupBy(total, 'desc') })
 
 async function classifyTransactionAxios(description) {
 
