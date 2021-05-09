@@ -62,7 +62,7 @@ async function getCategories(transactions) {
       promises.push(new Promise((resolve, rej) => {
         resolve(classifyTransactionAxios(record.description)
           .then(desc => {
-            total.push({ 'desc': desc || 'DOES NOT EXIST', 'amount': record.amount });
+            total.push({ 'desc': desc || 'NO_CATEGORY', 'amount': record.amount });
           })
         )
       }))
