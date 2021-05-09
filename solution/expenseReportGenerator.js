@@ -45,7 +45,7 @@ async function generateReport(username, startDate, endDate) {
   //1.  Fetch the relevant transactions from graphql
   return await client.request(query, variables)
     .then(report => { return getCategories(report.transactions) })
-    .catch((err) => { throw err })
+    .catch((err) => { throw new Error(err) })
 }
 
 async function getCategories(transactions) {
@@ -54,27 +54,30 @@ async function getCategories(transactions) {
   let promisesQueue = []
   let result
 
-  transactions.forEach(record => {
-    promises.push(new Promise((resolve, rej) => {
-      resolve(classifyTransactionAxios(record.description)
-        .then(desc => {
-          total.push({ 'desc': desc || 'DOES NOT EXIST', 'amount': record.amount });
-        })
-      )
-    }))
-  });
+  try {
+    transactions.forEach(record => {
+      promises.push(new Promise((resolve, rej) => {
+        resolve(classifyTransactionAxios(record.description)
+          .then(desc => {
+            total.push({ 'desc': desc || 'DOES NOT EXIST', 'amount': record.amount });
+          })
+        )
+      }))
+    });
 
-  let i, j, chunk = 10;
-  for (i = 0, j = promises.length; i < j; i += chunk) {
-    promisesQueue.push(promises.slice(i, i + chunk));
+    let i, j, chunk = 10;
+    for (i = 0, j = promises.length; i < j; i += chunk) {
+      promisesQueue.push(promises.slice(i, i + chunk));
+    }
+
+    for (let i = 0; i < promisesQueue.length; i++) {
+      await Promise.all(promisesQueue[i])
+    }
+    result = await groupBy(total, 'desc')
+    return result
+  } catch (error) {
+    throw new Error(error)
   }
-
-  for (let i = 0; i < promisesQueue.length; i++) {
-
-    await Promise.all(promisesQueue[i])
-  }
-  result = await groupBy(total, 'desc')
-  return result
   // return Promise.all(promises).then(() => { return groupBy(total, 'desc') })
 }
 
