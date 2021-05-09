@@ -23,7 +23,7 @@ const mockDavid = {
 const user = "moshe", startDate = "01/10/2015", endDate = "15/08/2017"
 
 describe("generateReport tests", () => {
-  test('should return a report for a requested user based on start and end dates range ', async () => {
+  test('should return a report for a requested user based on start and end dates range or full range if dates are not specified', async () => {
 
     const mosh = await generateReport(
       user, startDate, endDate
@@ -34,6 +34,6 @@ describe("generateReport tests", () => {
     )
     expect(mosh).toEqual(mock)
     expect(dave).toEqual(mockDavid)
-
   });
+  test('should return error message if username is empty', async () => { expect(await generateReport()).toEqual("username can not be empty.") })
 });
