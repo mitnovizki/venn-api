@@ -33,6 +33,9 @@ const client = new GraphQLClient(GRAPHQL_ENDPOINT);
  */
 async function generateReport(username, startDate, endDate) {
 
+  if (!username) {
+    return ("username can not be empty.")
+  }
   let query =
     `query($user:String!, $startDate:String, $endDate:String){
     transactions(username: $user, startDate: $startDate, endDate: $endDate) {
