@@ -9,22 +9,31 @@ const mock = {
   "MEDICAL": 212,
   "DOES NOT EXIST": 275
 }
+const mockDavid = {
+
+  "EATING_OUT": 4367,
+  "PUBLIC_TRANSPORTATION": 5779,
+  "MEDICAL": 1994,
+  "VACATION": 4108,
+  "BILLS": 1809,
+  "DOES NOT EXIST": 966,
+  "CAR_MAINTENANCE": 2273
+
+}
+const user = "moshe", startDate = "01/10/2015", endDate = "15/08/2017"
 
 describe("generateReport tests", () => {
-  test('should return a report for a requested user based on start and end dates range ', () => {
+  test('should return a report for a requested user based on start and end dates range ', async () => {
 
+    const mosh = await generateReport(
+      user, startDate, endDate
+    );
 
-    const mosh = await generateReport({
-      user: "moshe", start: "01/10/2015", end: "15/08/2017"
-    })
-    const dave = await generateReport({
-      user: "david", start: "01/10/15", end: "15/08/2017"
-    })
-
-    expect(mosh).toHaveLength > 0
-    expect(mosh[0]).toMatchObject(expect.any(String), expect.any(Number))
+    const dave = await generateReport(
+      "david"
+    )
     expect(mosh).toEqual(mock)
-    expect(dave).toContain("Invalid date format:")
+    expect(dave).toEqual(mockDavid)
 
   });
 });

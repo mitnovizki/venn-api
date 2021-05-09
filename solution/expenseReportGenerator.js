@@ -70,6 +70,7 @@ async function getCategories(transactions) {
   }
 
   for (let i = 0; i < promisesQueue.length; i++) {
+
     await Promise.all(promisesQueue[i])
   }
   result = await groupBy(total, 'desc')
