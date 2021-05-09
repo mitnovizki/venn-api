@@ -7,7 +7,7 @@ const mock = {
   "BILLS": 716,
   "VACATION": 1523,
   "MEDICAL": 212,
-  "DOES NOT EXIST": 275
+  "NO_CATEGORY": 275
 }
 const mockDavid = {
 
@@ -16,7 +16,7 @@ const mockDavid = {
   "MEDICAL": 1994,
   "VACATION": 4108,
   "BILLS": 1809,
-  "DOES NOT EXIST": 966,
+  "NO_CATEGORY": 966,
   "CAR_MAINTENANCE": 2273
 
 }
