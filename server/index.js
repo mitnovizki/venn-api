@@ -24,15 +24,6 @@ const app = express();
 server.applyMiddleware({ app });
 app.use(bodyParser.json());
 
-// //mw
-// const limiter = rateLimit({
-//   max: 10,
-//   windowMs: 10000 * 60 * 60,
-//   message: "please try again later"
-// })
-
-
-
 app.post("/transaction/classification", async function (req, res) {
   if (!req.body || !req.body.transactionDescription) {
     res.status(400);
@@ -44,7 +35,6 @@ app.post("/transaction/classification", async function (req, res) {
   }
 
   const { transactionDescription } = req.body;
-  //todo: use endpoint
 
   const transactionCategory = await classifyTransaction(transactionDescription);
   res.send({
