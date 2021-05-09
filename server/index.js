@@ -63,8 +63,8 @@ app.post("/transaction/generateReport", async (req, res) => {
     return;
   }
 
-  const { user, start, end } = req.body
-  await generateReport(user, start, end)
+  const { user, startDate, endDate } = req.body
+  await generateReport(user, startDate, endDate)
     .then((data) => {
       if (data) {
         res.status = 200

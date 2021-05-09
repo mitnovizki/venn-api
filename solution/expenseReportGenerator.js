@@ -4,7 +4,6 @@ const _ = require('lodash');
 const { GraphQLClient } = require('graphql-request');
 const { GRAPHQL_ENDPOINT, CATEGORIES_ENDPOINT, SERVER_BASE_URL, TRANSACTION_CATEGORIES, USERNAMES } = require('../consts');
 const { classifyTransaction } = require('../server/transactionClassifier');
-const resolvers = require('../server/graphql/resolvers');
 const client = new GraphQLClient(GRAPHQL_ENDPOINT);
 
 
@@ -55,14 +54,10 @@ async function getCategories(transactions) {
   let promisesQueue = []
   let result
 
-
-
   transactions.forEach(record => {
     promises.push(new Promise((resolve, rej) => {
-      // resolve(classifyTransaction(record.description)
       resolve(classifyTransactionAxios(record.description)
         .then(desc => {
-          // console.log(desc); console.log(record.amount);
           total.push({ 'desc': desc || 'DOES NOT EXIST', 'amount': record.amount });
         })
       )
@@ -74,18 +69,11 @@ async function getCategories(transactions) {
     promisesQueue.push(promises.slice(i, i + chunk));
   }
 
-
-  promisesQueue.forEach(promiseSlice => {
-    setTimeout(async () => {
-      await Promise.all(promiseSlice).then(console.log(total));
-    }, 1000);
-  })
-
-  console.log('22222')
+  for (let i = 0; i < promisesQueue.length; i++) {
+    await Promise.all(promisesQueue[i])
+  }
   result = await groupBy(total, 'desc')
-  console.log(result)
   return result
-
   // return Promise.all(promises).then(() => { return groupBy(total, 'desc') })
 }
 
@@ -96,7 +84,6 @@ async function classifyTransactionAxios(description) {
 
 const groupBy = async (input, key) => {
 
-  console.log(input)
   return input.reduce((total, currentAmount) => {
 
     let category = currentAmount[key];
@@ -104,7 +91,6 @@ const groupBy = async (input, key) => {
       total[category] = 0;
     }
     total[category] += currentAmount.amount;
-    console.log(total)
     return total;
 
   }, {});
