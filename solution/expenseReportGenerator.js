@@ -1,9 +1,6 @@
 const axios = require('axios');
-
-const _ = require('lodash');
 const { GraphQLClient } = require('graphql-request');
-const { GRAPHQL_ENDPOINT, CATEGORIES_ENDPOINT, SERVER_BASE_URL, TRANSACTION_CATEGORIES, USERNAMES } = require('../consts');
-const { classifyTransaction } = require('../server/transactionClassifier');
+const { GRAPHQL_ENDPOINT, CATEGORIES_ENDPOINT } = require('../consts');
 const client = new GraphQLClient(GRAPHQL_ENDPOINT);
 const cache = []
 
@@ -39,14 +36,13 @@ async function generateReport(username, startDate, endDate) {
   }
   let query =
     `query($user:String!, $startDate:String, $endDate:String){
-    transactions(username: $user, startDate: $startDate, endDate: $endDate) {
+     transactions(username: $user, startDate: $startDate, endDate: $endDate){
             amount
             description
           }}`
 
   let variables = { user: username, startDate: startDate, endDate: endDate }
 
-  //1.  Fetch the relevant transactions from graphql
   return await client.request(query, variables)
     .then(report => { return getCategories(report.transactions) })
     .catch((err) => { throw new Error(err) })
@@ -54,7 +50,7 @@ async function generateReport(username, startDate, endDate) {
 
 async function getCategories(transactions) {
   let promises = []
-  let total = []
+  let categoryAmountFlat = []
   let promisesQueue = []
   let result
   let limit = 0
@@ -118,12 +114,12 @@ async function getCategories(transactions) {
 
 async function classifyTransactionAxios(description) {
 
-  return axios.post(CATEGORIES_ENDPOINT, { "transactionDescription": description }).then((response) => { return response.data.transactionCategory })
+  return axios.post(CATEGORIES_ENDPOINT, { "transactionDescription": description })
+    .then((response) => { return response.data.transactionCategory })
 }
 
-const groupBy = async (input, key) => {
-
-  return input.reduce((total, currentAmount) => {
+const groupCategoriesByTotalAmount = async (categoryAmountFlatTable, key) => {
+  return categoryAmountFlatTable.reduce((total, currentAmount) => {
 
     let category = currentAmount[key];
     if (!total[category]) {
