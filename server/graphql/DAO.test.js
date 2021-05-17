@@ -36,7 +36,6 @@ describe("DAO", () => {
         startDate: '1/1/18'
       });
     } catch (e) {
-      // This is the expected behaviour
       expect(e.message).toContain('Invalid date format');
       return;
     }
