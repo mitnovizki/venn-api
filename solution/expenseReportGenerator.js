@@ -49,19 +49,25 @@ async function getCategories(transactions) {
   const categoryAmountFlat = [];
   let promises = [];
   let result;
-  let limit = 0;
+  let clientCallsLimit = 0;
 
   try {
     for (let i = 0; i < transactions.length; i += 1) {
       const singleTransaction = transactions[i];
       if (cache[singleTransaction.description]) {
-        categoryAmountFlat.push({ desc: cache[singleTransaction.description] || 'NO_CATEGORY', amount: singleTransaction.amount });
+        categoryAmountFlat.push({
+          desc: cache[singleTransaction.description] || 'NO_CATEGORY',
+          amount: singleTransaction.amount
+        });
       } else {
-        limit += 1;
+        clientCallsLimit += 1;
         promises.push(new Promise((resolve) => {
           resolve(classifyTransactionAxios(singleTransaction.description)
             .then((categoryName) => {
-              categoryAmountFlat.push({ desc: categoryName || 'NO_CATEGORY', amount: singleTransaction.amount });
+              categoryAmountFlat.push({
+                desc: categoryName || 'NO_CATEGORY',
+                amount: singleTransaction.amount
+              });
               const { description } = singleTransaction;
               if (!cache[description]) {
                 cache[description] = categoryName;
@@ -69,13 +75,13 @@ async function getCategories(transactions) {
             }));
         }));
       }
-      if (limit === 10) {
-        limit = 0;
+      if (clientCallsLimit === 10) {
+        clientCallsLimit = 0;
         Promise.all(promises);
         promises = [];
       }
     }
-    if (limit < 10) {
+    if (clientCallsLimit < 10) {
       await Promise.all(promises);
     }
     result = await groupCategoriesByTotalAmount(categoryAmountFlat, 'desc');
